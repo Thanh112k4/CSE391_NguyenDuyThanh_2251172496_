@@ -1,0 +1,39 @@
+p{
+    color:black;
+}
+
+.text{
+    color:blue;
+}
+
+.highlight{
+    color:green;
+}
+
+p.text{
+    color:orange;
+}
+
+#demo{
+    color:red;
+}
+
+p.highlight{
+    color:purple;
+}
+
+body p{
+    color:brown;
+}
+
+html body p{
+    color:pink;
+}
+
+.text.highlight{
+    color:yellow;
+}
+
+#demo.text.highlight{
+    color:darkcyan;
+}

@@ -1,0 +1,23 @@
+body{
+    font-family:Arial;
+}
+
+.wrapper{
+    display:flex;
+    gap:20px;
+}
+
+.box{
+    width:300px;
+    padding:20px;
+    border:5px solid black;
+    background:#ddd;
+}
+
+.content-box{
+    box-sizing:content-box;
+}
+
+.border-box{
+    box-sizing:border-box;
+}
