@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng ký tài khoản</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Đăng ký tài khoản</h1>
+
+<form action="#" method="POST">
+
+<fieldset>
+
+<legend>Thông tin cá nhân</legend>
+
+<label for="fullname">Họ tên</label>
+<input
+type="text"
+id="fullname"
+required
+minlength="2"
+maxlength="50"
+placeholder="Nguyễn Văn A">
+
+<label for="email">Email</label>
+<input
+type="email"
+id="email"
+required
+placeholder="abc@gmail.com">
+
+<label for="phone">Số điện thoại</label>
+<input
+type="tel"
+id="phone"
+pattern="[0-9]{10}"
+placeholder="0901234567">
+
+<label for="dob">Ngày sinh</label>
+<input
+type="date"
+id="dob"
+max="2026-05-31">
+
+</fieldset>
+
+<fieldset>
+
+<legend>Tài khoản</legend>
+
+<label for="username">Username</label>
+<input
+type="text"
+id="username"
+pattern="[a-zA-Z0-9_]{3,20}"
+placeholder="thanh_nguyen">
+
+<label for="password">Password</label>
+<input
+type="password"
+id="password"
+minlength="8"
+pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}"
+placeholder="Password">
+
+<label for="confirm">Xác nhận Password</label>
+<input
+type="password"
+id="confirm"
+minlength="8"
+placeholder="Nhập lại mật khẩu">
+
+</fieldset>
+
+<fieldset>
+
+<legend>Thông tin giao hàng</legend>
+
+<label for="city">Thành phố</label>
+
+<select id="city">
+
+<option>Hà Nội</option>
+<option>TP Hồ Chí Minh</option>
+<option>Đà Nẵng</option>
+<option>Hải Phòng</option>
+<option>Cần Thơ</option>
+
+</select>
+
+<label for="district">Quận/Huyện</label>
+
+<select id="district">
+
+<option>Ba Đình</option>
+<option>Cầu Giấy</option>
+<option>Hoàn Kiếm</option>
+
+</select>
+
+<label for="address">Địa chỉ</label>
+
+<textarea
+id="address"
+rows="3"
+placeholder="Nhập địa chỉ">
+</textarea>
+
+<label>Giới tính</label>
+
+<input type="radio" name="gender"> Nam
+<input type="radio" name="gender"> Nữ
+<input type="radio" name="gender"> Khác
+
+<br><br>
+
+<label>
+<input type="checkbox" required>
+Tôi đồng ý điều khoản
+</label>
+
+</fieldset>
+
+<button type="submit" class="submit-btn">
+Đăng ký
+</button>
+
+<button type="reset" class="reset-btn">
+Làm lại
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

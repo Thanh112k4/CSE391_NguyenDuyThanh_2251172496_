@@ -1,0 +1,135 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    padding:20px;
+    line-height:1.6;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+form{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+fieldset{
+    margin-bottom:20px;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+legend{
+    font-weight:bold;
+    padding:0 10px;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    outline:none;
+    border-color:#2563eb;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    margin-right:10px;
+}
+
+.submit-btn{
+    background:#2563eb;
+    color:white;
+}
+
+.reset-btn{
+    background:#ef4444;
+    color:white;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:20px;
+    background:white;
+}
+
+table th,
+table td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+figure{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+figure img{
+    width:100%;
+    max-width:100%;
+    height:auto;
+}
+
+figcaption{
+    margin-top:10px;
+    text-align:center;
+    font-weight:bold;
+}
+
+video,
+audio,
+iframe{
+    width:100%;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:10px;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+    }
+
+}
