@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Product Catalog</h1>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Tìm sản phẩm..."
+    >
+
+    <select id="sortSelect">
+        <option value="">Sắp xếp</option>
+        <option value="priceAsc">Giá tăng dần</option>
+        <option value="priceDesc">Giá giảm dần</option>
+        <option value="name">Tên A-Z</option>
+        <option value="rating">Đánh giá cao nhất</option>
+    </select>
+
+    <div class="cart">
+        🛒 <span id="cartCount">0</span>
+    </div>
+
+    <button id="darkModeBtn">
+        🌙 Dark Mode
+    </button>
+</header>
+
+<div class="categories">
+    <button class="category-btn" data-category="all">All</button>
+    <button class="category-btn" data-category="phone">Phone</button>
+    <button class="category-btn" data-category="laptop">Laptop</button>
+    <button class="category-btn" data-category="tablet">Tablet</button>
+    <button class="category-btn" data-category="accessory">Accessory</button>
+</div>
+
+<div id="productContainer"></div>
+
+<div id="modal" class="modal hidden">
+    <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
