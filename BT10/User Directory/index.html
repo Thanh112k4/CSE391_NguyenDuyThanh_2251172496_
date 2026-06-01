@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Directory CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>👥 User Directory</h1>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Tìm theo tên hoặc email..."
+    >
+
+    <form id="userForm">
+        <input type="text" id="name" placeholder="Tên" required>
+        <input type="email" id="email" placeholder="Email" required>
+
+        <button type="submit">
+            Lưu User
+        </button>
+    </form>
+
+    <div id="loading" class="loading">
+        Đang tải dữ liệu...
+    </div>
+
+    <div id="toast"></div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tên</th>
+                <th>Email</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+
+        <tbody id="userTable"></tbody>
+    </table>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
